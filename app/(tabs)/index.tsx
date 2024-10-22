@@ -2,7 +2,7 @@ import { Image, StyleSheet, Platform } from 'react-native';
 
 import { Provider } from 'react-redux';
 import {  legacy_createStore as createStore, applyMiddleware } from 'redux';
-import thunk from 'redux-thunk';
+import { thunk } from 'redux-thunk';
 import reducers from '../../reducers/PeopleReducer';
 
 const store = createStore(reducers, applyMiddleware(thunk));
